@@ -1,39 +1,31 @@
-// Write a Java program to create a simple calculator using a switch case.
-import java.util.Scanner;
-public class Calculator{
-  public static void main(String[]args){
-    Scanner sc1 = new Scanner(System.in);
-    System.out.println("Enter the first number");
+public class Calculator {
+    public static void main (String[] args){
+        int num1=33;
+        int num2=12;
+        int sum,sub,mul,quo,rem;
+        System.out.println("Choose your operation: + , - , * , / ");
+        char choice = '*' ;
+        switch(choice){
+            case '+' :
+            sum=num1+num2;
+           System.out.println("The sum of "+ num1 +" and "+num2 +" is: "+sum );
+           break; 
+           case '-' :
+           sub=num1-num2;
+           System.out.println("The difference of "+ num1 +" and "+num2 +" is: "+sub );
+           break;
+           case '*' :
+           mul=num1*num2;
+           System.out.println("The product of "+ num1+ " and "+num2 +" is: "+mul );
+           break;
+           case '/' :
+           quo=num1/num2;
+           rem=num1%num2;
+           System.out.println("the quotient of "+ num1 +" and "+num2 +" is: "+quo +" and remainder is "+rem );
+           break;
+        }
 
-    Scanner sc2 = new Scanner(System.in);
-    System.out.println("Enter the second number");
 
-    float num1 = sc1.nextInt(); 
-    float num2 = sc2.nextInt(); 
-
-    Scanner sc= new Scanner(System.in); // Takin the symbol for the calculation
-    System.out.println("Enter the calculation you want to do. * / + -");
-    char letter = sc.next().charAt(0);
-    if (letter== '*' || letter == '/' || letter == '+' || letter == '-'){
-    switch (letter) {
-      case '*':
-      System.out.println(num1*num2);
-      break;
-      case '/': 
-      System.out.println(num1/num2);
-      break;
-      case '+': 
-      System.out.println(num1+ num2);
-      break;
-      case '-': 
-      System.out.println(num1-num2);
-      break;
-      default:
-      System.out.println("Invalid option given!!");
-        break;
-      }
-    } else{
-      System.out.println("Invalid option given!!");
     }
-  }
+    
 }
