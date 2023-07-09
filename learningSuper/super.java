@@ -23,7 +23,7 @@ class Emp extends Person {
 
 class TestSuper {
     public static void main(String[] args) {
-        Emp e1 = new Emp(1, "Manish", 2000);
+        Emp e1 = new Emp(1, "Ananda", 54000);
         e1.display();
     }
 }
