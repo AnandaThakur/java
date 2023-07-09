@@ -8,13 +8,13 @@ class Employee {
 
 class Manager extends Employee {
     int salary() {
-        return base + 1000;
+        return base + 2200;
     }
 }
 
 class Clerk extends Employee {
     int salary() {
-        return base + 10000;
+        return base + 33000;
     }
 }
 
