@@ -1,0 +1,21 @@
+class ExcExample extends Exception {
+    public  ExcExample(){
+        System.out.println("balance is low");
+    }
+}
+public class exception{
+    public static void main(String[] args){
+        try{
+            int [] acc ={5,63,62,115,68,80};
+            double [] balance ={21.5,151,2524,2218,480.45};
+            for (int i=0;i<5;i++){
+                System.out.println("Account no" +acc[i] +" " +"balance is " + balance[i]);
+            if (balance[i]< 1000){
+                throw new ExcExample();
+            }
+            }
+        }catch (ExcExample e){
+            System.out.println("Exception Caught");
+        }
+    }
+}
