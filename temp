@@ -1,0 +1,10 @@
+public class temp
+{
+    public static void main(string...s)
+    {
+        String str="Hello world";
+        char ch[]=str.toCharArray();
+        System.out.println(ch);//Hello
+        
+    }
+}
