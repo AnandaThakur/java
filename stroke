@@ -1,0 +1,26 @@
+
+class stroke {
+    public static void main(String[] args) {
+        String test = "HelloWorld";
+        System.out.println(test.length());
+        System.out.println(test.charAt(1));
+        System.out.println(test.substring(3));
+        System.out.println(test.substring(3, 4));
+        String prg1 = "Hello";
+        String prg2 = "World";
+        String output = prg1.concat(prg2);
+        System.out.println(output);
+
+        String subjectName = "BCA";
+        int subjectOutput = subjectName.indexOf("Logic");
+        System.out.println(subjectName);
+        System.out.println(subjectName.indexOf("Lo", 4));
+
+        Boolean resultBool = test.equals(subjectName);
+        System.out.println(resultBool);
+
+        Boolean isEqualsByIgnoring = test.equalsIgnoreCase(test);
+        System.out.println(isEqualsByIgnoring);
+
+    }
+}
