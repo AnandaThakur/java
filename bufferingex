@@ -1,0 +1,17 @@
+public class bufferingex {
+    public static void main(String[] args) {
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("naruto");
+        stringBuffer.append("uzumaki");
+
+        System.out.println("result is: " + stringBuffer);
+        stringBuffer.insert(7, " D.");
+        System.out.println("result is: " + stringBuffer);
+        stringBuffer.replace(3, 9, "welcome");
+        System.out.println("result is: " + stringBuffer);
+        stringBuffer.delete(0, 5);
+        System.out.println("result is: " + stringBuffer);
+        stringBuffer.reverse();
+        System.out.println("result is: " + stringBuffer);
+    }
+}
