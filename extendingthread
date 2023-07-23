@@ -1,0 +1,26 @@
+import java.lang.*;
+public class extendingthread Thread {
+    public void run(){
+        System.out.println("this is inside run menthod");
+    }
+
+
+    public static void main(String[] args){
+        threads t1 = new threads();
+        threads t2 = new threads();
+        threads t3 = new threads();
+
+        System.out.println("T1 thread priority"+ t1.getPriority());
+        System.out.println("T2 thread priority"+ t2.getPriority());
+        System.out.println("T3 thread priority"+ t3.getPriority());
+
+
+        System.out.println("T1 thread priority"+ t1.getPriority());
+        System.out.println("T2 thread priority"+ t2.getPriority());
+        System.out.println("T3 thread priority"+ t3.getPriority());
+
+        System.out.println("currently executing thread: "+Thread.currentThread().getName() );
+        System.out.println("main thread priority: "+Thread.currentThread().getPriority() );
+        System.out.println("Main thread priority: "+Thread.currentThread().getPriority() );
+    }
+}
